@@ -1,0 +1,92 @@
+import React, { useContext } from "react";
+import "./Education.css";
+import Card from "../Card/Card";
+import HeartEmoji from "../../img/heartemoji.png";
+import Glasses from "../../img/glasses.png";
+import Humble from "../../img/humble.png";
+import { themeContext } from "../../Context";
+import { motion } from "framer-motion";
+import Resume from './resume.pdf';
+
+const Education = () => {
+  // context
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
+  // transition
+  const transition = {
+    duration: 1,
+    type: "spring",
+  };
+
+  return (
+    <div className="education" id="education">
+      {/* left side */}
+      <div className="awesome">
+        {/* dark mode */}
+        <span style={{ color: darkMode ? "white" : "" }}>My Journey</span>
+        <span>Education</span>
+        <span>
+          MCA graduate from Delhi University with 6 months of Software Development experience. 
+          <br />
+          Completed schooling at 2017, Undergraduate at 2020 and Postgraduate at 2024.
+        </span>
+        <a href={Resume} download>
+          <button className="button s-button">Download CV</button>
+        </a>
+        <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
+      </div>
+      {/* right */}
+      <div className="cards">
+        {/* first card */}
+        <motion.div
+          initial={{ left: "25rem" }}
+          whileInView={{ left: "14rem" }}
+          transition={transition}
+        >
+          <Card
+            emoji={HeartEmoji}
+            heading={"School"}
+            detail={"Sri Ramkrishna Sikshalaya, WBCHSE"}
+            date={'2005-2017'}
+          />
+        </motion.div>
+        {/* second card */}
+        <motion.div
+          initial={{ left: "-11rem", top: "12rem" }}
+          whileInView={{ left: "-4rem" }}
+          transition={transition}
+        >
+          <Card
+            emoji={Glasses}
+            heading={"Postgraduate(MCA)"}
+            detail={"Department of Computer Science, University of Delhi"}
+            date={'2022-2024'}
+          />
+        </motion.div>
+        {/* 3rd */}
+        <motion.div
+          initial={{ top: "19rem", left: "25rem" }}
+          whileInView={{ left: "12rem" }}
+          transition={transition}
+        >
+          <Card
+            emoji={Humble}
+            heading={"Undergraduate(Maths)"}
+            detail={
+              "Narasinha Dutt College, University of Calcutta"
+            }
+            date={'2017-2020'}
+            color="rgba(252, 166, 31, 0.45)"
+          />
+        </motion.div>
+        <div
+          className="blur s-blur2"
+          style={{ background: "var(--purple)" }}
+        ></div>
+      </div>
+    </div>
+  );
+};
+
+export default Education;
