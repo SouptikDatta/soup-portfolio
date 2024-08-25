@@ -59,9 +59,9 @@ const Education = () => {
         >
           <Card
             emoji={Glasses}
-            heading={"Postgraduate(MCA)"}
-            detail={"Department of Computer Science, University of Delhi"}
-            date={'2022-2024'}
+            heading={"Undergraduate(Maths Honours)"}
+            detail={"Narasinha Dutt College, University of Calcutta"}
+            date={'2017-2020'}
           />
         </motion.div>
         {/* 3rd */}
@@ -72,11 +72,9 @@ const Education = () => {
         >
           <Card
             emoji={Humble}
-            heading={"Undergraduate(Maths)"}
-            detail={
-              "Narasinha Dutt College, University of Calcutta"
-            }
-            date={'2017-2020'}
+            heading={"Postgraduate(MCA)"}
+            detail={"Department of Computer Science, University of Delhi"}
+            date={'2022-2024'}
             color="rgba(252, 166, 31, 0.45)"
           />
         </motion.div>
