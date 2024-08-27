@@ -29,10 +29,21 @@ const projects = [
         "description": "An end-to-end restaurant site with advanced admin dashboard and it offers 100+ items of 6 menu categories, online food order tracking, stripe payment gateway, ratings & feedback, contact support.",
         "techStack": ["React JS ", " Node JS ", " MongoDB", " Tailwind CSS", " Daisy UI", " Stripe"],
         "features": [
-            { "feature": "Advanced Admin Dashboard", "image": images.Feature1 },
-            { "feature": "Online Food Order Tracking", "image": images.Feature2 },
-            { "feature": "Stripe Payment Gateway", "image": images.Feature3 },
-            { "feature": "Ratings & Feedback", "image": images.Feature4 }
+            { "feature": "A visually appealing fully functional modern animated Restaurant site", "image": images.TETestimonials },
+            { "feature": "Secure authentication system using Firebase and utilize JWT access tokens to specific user roles", "image": images.TELogin },
+            { "feature": "Filter accross 6 Item categories , pagination for 100+ dishes", "image": images.TECategories },
+            { "feature": "All Cart functionalities including add, delete items and auto calulated order quantity and price", "image": images.TECartPage },
+            { "feature": "Store and Removal of Favorite items seperately for quick access", "image": images.TEFavorite },
+            { "feature": "Secured Stripe Payment Gateway with various payment options while placing order", "image": images.TEPayment },
+            { "feature": "Online food order tracking with Ratings & Feedback section for customers on completed orders", "image": images.TERatings },
+            { "feature": "World's top most cuisines which are available to order are listed on a stunning image slideshow", "image": images.TECuisines },
+            { "feature": "Detailed animated About Page with vision and timelines about the development, launching phase of the website", "image": images.TEAbout },
+            { "feature": "Admin only access Advanced feature rich Dashboard ensuring data security and preventing unauthorized access", "image": images.TEDashboard },
+            { "feature": "Provide administrators with the ability to upload new menu items, update uploaded items", "image": images.TEManageItems },
+            { "feature": "Admins can also view, confirm or delete orders based on transaction id", "image": images.TEManageUsers },
+            { "feature": "Frequently asked Questions listed in accodion for help of the customers", "image": images.TEFaq },
+            { "feature": "Customer support via Emails and impressive contact page", "image": images.TEContactPage },
+            { "feature": "Stunning Footer UI including Naviagation links, contact informations and copyright notice", "image": images.TEFooter },
         ]
     },
     {

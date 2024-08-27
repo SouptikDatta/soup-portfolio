@@ -20,8 +20,10 @@ module.exports = {
       gray: "#f7f0fe",
       white: "#ffffff",
       black: "#00000",
+      cyan: "#69efec",
       accent: "#284be5",
       accent2: "#232a60",
+      darkblue: "#152c75",
       shapBg: "#eeeffa",
       shapBgDark: "#252a50",
       desc: "#a8a9c5",
@@ -63,6 +65,15 @@ module.exports = {
 
       // "3xl": "1610px",
       // => @media (min-width: 1610px) { ... }
+    },
+    letterSpacing: {
+      tightest: '-.075em',
+      tighter: '-.05em',
+      tight: '-.025em',
+      normal: '0',
+      wide: '.025em',
+      wider: '.05em',
+      widest: '.1em',
     },
     extend: {
       boxShadow: {
