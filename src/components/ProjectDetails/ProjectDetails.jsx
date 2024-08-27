@@ -55,13 +55,13 @@ const ProjectDetails = () => {
 	}
 
   return (
-    <div className='p-4 pt-2'>	
+    <div className='p-3 md:p-4 pt-2'>	
 		<Breadcrumb />	
 		<section className="pageWrap pt-4 lg:pt-6 relative w-full">
 			<div className="container sm:container md:container lg:container xl:max-w-full mx-auto">
 				<div className="pageInner grid col-span-2 lg:gap-[1.875rem] lg:grid-cols-3 grid-cols-1 w-full">
 					<div className="col-span-2 mb-2">
-						<div className="postDetail relative w-[calc(100vw-2.5rem)] md:w-full">
+						<div className="postDetail relative md:w-full">
 							<div className="postDetailImage relative border-4 border-accent rounded-[10px] sm:rounded-[1.25rem] md:rounded-2xl overflow-hidden md:w-full">
 								<img className="w-full" src={portfolio?.image.url} alt=""></img>
 								<SocialLinks />

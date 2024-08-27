@@ -55,20 +55,19 @@ const ProjectLinks = ({ githuburl, liveurl }) => {
 
             {isVideoOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
-                    <div className="relative flex flex-col items-center w-11/12 md:w-2/3 lg:w-1/2 bg-white p-4 sm:p-6 md:p-8 rounded-lg">
+                    <div className="relative flex flex-col items-center w-11/12 md:w-2/3 lg:w-1/2 bg-black rounded-lg">
                         <button
                             onClick={closeVideoModal}
-                            className="absolute top-[-50px] sm:top-[-40px] md:top-[-30px] right-[-50px] sm:right-[-40px] md:right-[-30px] w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-reddit text-white flex items-center justify-center"
+                            className="absolute top-[-50px] md:top-[-30px] sm:right-[-40px] md:right-[-30px] w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-reddit text-white flex items-center justify-center"
                         >
                             <ImCross size={20} />
                         </button>
-                        Coming soon
-                        {/* <iframe
+                        <iframe title="Project Demo Video"
                             src="https://www.youtube.com/embed/T4AWfmAYTNA"
-                            className="w-full h-48 sm:h-64 md:h-72 rounded-lg mt-4"
+                            className="w-full h-48 sm:h-64 md:h-72 rounded-lg"
                             allow="autoplay; encrypted-media"
                             allowFullScreen
-                        ></iframe> */}
+                        ></iframe>
                     </div>
                 </div>
             )}
