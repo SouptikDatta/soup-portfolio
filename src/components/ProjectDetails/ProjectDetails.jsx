@@ -95,7 +95,8 @@ const ProjectDetails = () => {
 					<Sidebar2
 						links={{
 							liveurl: portfolio?.liveurl || '',
-							githuburl: portfolio?.githuburl || ''
+							githuburl: portfolio?.githuburl || '',
+							videourl: portfolio?.videourl || ''
 						}}
 						techStack={portfolio?.techStack || []}
 					/>
@@ -116,8 +117,8 @@ const ProjectDetails = () => {
 							{portfolio?.features.map((feature, index) => (
 								<p
 									key={index}
-									className={`flex flex-row items-center font-Poppins mt-2 md:mt-4 text-desc2 text-[0.7rem] md:text-[1rem] leading-normal cursor-pointer transition-transform duration-500 
-										${currentFeature === index ? 'p-2 rounded-xl bg-cyan text-dark font-bold scale-105' : ''}`}
+									className={`flex flex-row items-center font-Poppins mt-2 md:mt-4 text-white text-[0.7rem] md:text-[1rem] leading-normal cursor-pointer transition-transform duration-500 
+										${currentFeature === index ? 'p-2 rounded-xl bg-cyan text-dark2 font-bold scale-105' : ''}`}
 									onClick={() => handleFeatureClick(index)}
 								>
 									<FaAngleDoubleRight size={25} className='mr-4' />{feature.feature}

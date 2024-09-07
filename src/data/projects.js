@@ -3,19 +3,22 @@ import images from '../img/images';
 const projects = [
     {
         "liveurl": "https://souptik-golds-gym.netlify.app/",
-        "githuburl": "https://github.com/SouptikDatta/golds-gym-react-fitness",
-        "title": "Golds Gym",
+        "githuburl": "https://github.com/SouptikDatta/red-beat",
+        "videourl": "https://youtu.be/xdHjzBP_cNM",
+        "title": "RedBeat",
         "image": {
             "public_id": "1706285511679-xe7r9t",
-            "url": images.Goldsgym,
+            "url": images.RedBeat,
         },
-        "description": "A Fitness App, offering exercise category selection, muscle group filtering over 1,000+ exercises with practical examples, YouTube video integration and 3+ similar exercise recommendations",
+        "description": "A Fitness App, offering exercise category selection, muscle group filtering over 1,000+ exercises with practical examples, YouTube video integration and 5+ similar exercise recommendations",
         "techStack": ["Reactjs ", " Material UI ", " CSS", " Rapid API"],
         "features": [
-            { "feature": "Exercise Category Selection", "image": images.Feature1 },
-            { "feature": "Muscle Group Filtering", "image": images.Feature2 },
-            { "feature": "YouTube Video Integration", "image": images.Feature3 },
-            { "feature": "Similar Exercise Recommendations", "image": images.Feature4 }
+            { "feature": "Exercise Category Selection based on important 12+ Muscle groups", "image": images.RBCategory },
+            { "feature": "1300+ popular Exercises with practical animated examples", "image": images.RBExercises },
+            { "feature": "Pagination and search functionality for user-friendliness", "image": images.RBPagination },
+            { "feature": "Individual Exercise Data with effective body parts and animated demonstrations", "image": images.RBExerciseDetail },
+            { "feature": "3+ YouTube Video recommendations and direct link for each exercise", "image": images.RBVideo },
+            { "feature": "Over 5+ Similar Target Muscle Exercise and Gym Equipment Recommendations", "image": images.RBSimilarExercise }
         ]
     },
     {

@@ -3,8 +3,17 @@ import PatternImg2 from '../../img/patternImg2.jpg';
 import { FaVideo, FaLink, FaGithub } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 
-const ProjectLinks = ({ githuburl, liveurl }) => {
+const ProjectLinks = ({ githuburl, liveurl, videourl }) => {
     const [isVideoOpen, setVideoOpen] = useState(false);
+
+    // Convert the YouTube URL to the embed format if needed
+    const getEmbedUrl = (url) => {
+        if (url.includes('youtu.be')) {
+            const videoId = url.split('/').pop();
+            return `https://www.youtube.com/embed/${videoId}`;
+        }
+        return url;
+    };
 
     const openVideoModal = () => {
         setVideoOpen(true);
@@ -45,13 +54,15 @@ const ProjectLinks = ({ githuburl, liveurl }) => {
                 </button>
             )}
 
-            <button
-                onClick={openVideoModal}
-                className="relative flex flex-row justify-center items-center h-8 md:h-12 w-[90%] overflow-hidden rounded-lg border border-tumblr bg-tumblr text-white shadow-lg transition-all before:absolute before:left-0 before:right-0 before:top-0 before:h-0 before:w-full before:bg-white before:duration-500 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-white after:duration-500 hover:text-tumblr hover:shadow-white hover:before:h-2/4 hover:after:h-2/4 mt-2"
-            >
-                <FaVideo className='relative z-10 text-md md:text-2xl' />
-                <span className="relative z-10 ml-2 font-NunitoSans font-bold text-sm md:text-xl">Video</span>
-            </button>
+            {videourl && (
+                <button
+                    onClick={openVideoModal}
+                    className="relative flex flex-row justify-center items-center h-8 md:h-12 w-[90%] overflow-hidden rounded-lg border border-tumblr bg-tumblr text-white shadow-lg transition-all before:absolute before:left-0 before:right-0 before:top-0 before:h-0 before:w-full before:bg-white before:duration-500 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-white after:duration-500 hover:text-tumblr hover:shadow-white hover:before:h-2/4 hover:after:h-2/4 mt-2"
+                >
+                    <FaVideo className='relative z-10 text-md md:text-2xl' />
+                    <span className="relative z-10 ml-2 font-NunitoSans font-bold text-sm md:text-xl">Video</span>
+                </button>
+            )}
 
             {isVideoOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50">
@@ -63,8 +74,8 @@ const ProjectLinks = ({ githuburl, liveurl }) => {
                             <ImCross size={20} />
                         </button>
                         <iframe title="Project Demo Video"
-                            src="https://www.youtube.com/embed/T4AWfmAYTNA"
-                            className="w-full h-48 sm:h-64 md:h-72 rounded-lg"
+                            src={getEmbedUrl(videourl)}
+                            className="w-full h-48 sm:h-64 md:h-[460px] rounded-lg border-4 border-black"
                             allow="autoplay; encrypted-media"
                             allowFullScreen
                         ></iframe>

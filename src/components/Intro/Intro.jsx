@@ -22,16 +22,16 @@ const Intro = () => {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="Intro" id="Intro">
+    <div className="Intro p-2 md:p-10 pt-0" id="Intro">
       {/* left name side */}
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Souptik Datta</span>
+          <h2>Souptik Datta</h2>
           <span>
-            FullStack Developer with high level of experience in web designing
-            and development, producting the Quality work.
+            FullStack Developer with hands-on experience in designing, developing, 
+            implementing applications and solutions using wide range of technologies and programming languages.
             <br/>
             Actively seeking new opportunities to contribute to dynamic development teams.
           </span>
@@ -56,10 +56,10 @@ const Intro = () => {
       <div className="i-right">
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
-        <img src={boy} alt="" />
+        <img src={boy} alt="" className="w-[90%] md:w-[50%] "/>
         {/* animation */}
         <motion.img
-          initial={{ left: "-36%" }}
+          initial={{ left: "-56%" }}
           whileInView={{ left: "-24%" }}
           transition={transition}
           src={glassesimoji}
@@ -67,8 +67,8 @@ const Intro = () => {
         />
 
         <motion.div
-          initial={{ top: "-4%", left: "74%" }}
-          whileInView={{ left: "68%" }}
+          initial={{ top: "-4%", left: "34%" }}
+          whileInView={{ left: "62%" }}
           transition={transition}
           className="floating-div"
         >

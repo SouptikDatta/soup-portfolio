@@ -5,7 +5,6 @@ import "./App.css";
 import Experience from "./components/Experience/Experience";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
-import Testimonial from "./components/Testimonials/Testimonial";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { useContext } from "react";
@@ -25,10 +24,9 @@ function App() {
       <Navbar />
       <Intro />
       <Education />
-      <Experience />
       <Skills />
+      <Experience />
       <Projects />
-      <Testimonial />
       <Contact />
       <Footer />
     </div>

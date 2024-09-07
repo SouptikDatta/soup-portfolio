@@ -7,7 +7,7 @@
   --yellow: #F5C32C;
   --orange : #FCA61F;
   --black : #242D49;
-  --gray : #788097;
+  --gray : #5e6577;
   --blueCard : #DDF8FE;
   --purple: rgb(238 210 255);
   --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
@@ -16,7 +16,6 @@
 }
 
 .App{
-    padding: 0.5rem 3.5rem;
     overflow: hidden;
     color: var(--black);    
 }
@@ -42,10 +41,98 @@
     border: 1px solid var(--orange);
     color: var(--orange);
   }
-  @media screen and (max-width: 480px) {
-    .App {
-      padding: 0.5rem 1rem;
 
+ /*===== Work Experience Style =====*/
+/*=== Background ===*/
+.fixedBg {
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+.fixed-bg {
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.sliderWrap .swiper {
+  width: 100%;
+  max-height: 48rem;
+}
+
+.sliderWrap .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ensure slides are centered vertically */
+  opacity: 0.5; /* Set a base opacity for all slides */
+  transition: opacity 0.3s ease;
+}
+
+.sliderWrap .swiper-slide.swiper-slide-active {
+  opacity: 1; /* Highlight the active slide */
+  height: initial !important;
+}
+
+.sliderWrap .swiper-slide-active .expBoxBg,
+.slick-center .expBoxBg {
+  top: 2rem;
+  bottom: 2rem;
+}
+
+.swiper-slide-active .expImg,
+.slick-center .expImg {
+  opacity: 1;
+  max-height: 100%;
+}
+
+.swiper-slide-active .expCap > i,
+.slick-center .expCap > i {
+  opacity: 0.4;
+}
+
+.swiper-slide-active .expCap > i:before,
+.slick-center .expCap > i:before {
+  background-color: #fff;
+  opacity: 0.3;
+}
+
+.swiper-slide-active .expCap > span,
+.swiper-slide-active .expCap > h4,
+.slick-center .expCap > span,
+.slick-center .expCap > h4 {
+  color: #fff;
+}
+
+.sliderWrap .swiper-pagination {
+  left: 0.875rem;
+}
+
+.sliderWrap .swiper-pagination > span,
+.swiperWrap2 .swiper-pagination > span {
+  height: 10px;
+  border-radius: 2.5rem;
+  background-color: white;
+  width: 6px;
+}
+
+.sliderWrap .swiper-pagination > span.swiper-pagination-bullet-active,
+.swiperWrap2 .swiper-pagination > span.swiper-pagination-bullet-active {
+  height: 1.875rem;
+}
+
+.expImg,
+.expBoxBg {
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+  @media screen and (max-width: 480px) {
+    .education, .Intro, .n-wrapper, .projects {
+      padding: 0.5rem 1rem;
     }
   }
 

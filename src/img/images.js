@@ -1,6 +1,7 @@
 // images.js
 import Freight from './Freight.png';
-import Goldsgym from './Goldsgym.png';
+import Pborbit from './Pborbit/Pborbit.png'
+import RedBeat from './RedBeat.png';
 import Krivitech from './Krivitech.png';
 import Socialoo from './Socialoo.png';
 import TastyEats from './Tastyeats.png';
@@ -27,8 +28,14 @@ import TETrackOrders from './TastyEats/Track-orders.png'
 import TEUploadNewItems from './TastyEats/Upload-new-menu.png'
 import TEPayment from './TastyEats/Payment.png'
 import TELogin from './TastyEats/Login.png'
-// Goldsgym Images
 
+// RedBeat Images
+import RBCategory from './RedBeat/category.png';
+import RBExerciseDetail from './RedBeat/exercise-details.png'
+import RBExercises from './RedBeat/exercises.png'
+import RBSimilarExercise from './RedBeat/similar-exercise.png'
+import RBPagination from './RedBeat/pagination.png'
+import RBVideo from './RedBeat/video-recommendations.png'
 
 // Homyz Images
 
@@ -41,12 +48,20 @@ import TELogin from './TastyEats/Login.png'
 // import all other images as needed
 const images = {
     Freight,
-    Goldsgym,
+    Pborbit,
+    RedBeat,
     Krivitech,
     Socialoo,
     TastyEats,
     Homyz,
     Catalix,
+
+    RBCategory,
+    RBExerciseDetail,
+    RBExercises,
+    RBPagination,
+    RBSimilarExercise,
+    RBVideo,
 
     TEAbout,
     TECartPage,
