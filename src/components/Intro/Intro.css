@@ -1,7 +1,41 @@
 .Intro {
   display: flex;
   height: 77vh;
+  position: relative;
 }
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: 1; /* Ensure images are above the background */
+}
+
+/* Blur effect for lazy-loaded images */
+.lazy-load-image-background.blur {
+  filter: blur(10px);
+  transition: filter 0.3s ease-in-out;
+}
+
+.lazy-load-image-background img {
+  overflow: hidden;
+  filter: none; /* Remove blur after loading */
+  z-index: 1; /* Ensure visibility */
+}
+
+/* Blur effect background */
+.blur {
+  background: transparent !important;
+  filter: blur(72px);
+  z-index: -9; /* Ensure blur is behind images */
+}
+
 
 /* left side styling */
 .i-left {
@@ -98,6 +132,10 @@
     gap: 5rem;
     height: 64rem;
     margin-top: 1rem;
+  }
+
+  .image-wrapper img {
+    width: 75%;
   }
 
   .i-name > :nth-child(2) {
