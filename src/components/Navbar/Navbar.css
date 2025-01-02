@@ -17,6 +17,13 @@
   font-size: 1.3rem;
   font-weight: bold;
 }
+
+.n-name-span{
+  color: var(--orange);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .n-right {
   flex: 1;
   display: flex;
@@ -46,5 +53,12 @@
 @media screen and (max-width: 480px) {
   .n-list {
     display: none;
+  }
+  .n-name {
+    font-size: 0.8rem;
+  }
+  
+  .n-name-span{
+    font-size: 1rem;
   }
 }

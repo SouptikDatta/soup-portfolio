@@ -27,7 +27,7 @@ const Education = () => {
         <span style={{ color: darkMode ? "white" : "" }}>My Journey</span>
         <span>Education</span>
         <span>
-          MCA graduate from Delhi University with 6 months of Software Development experience. 
+          Recently postgraduated from Delhi University on 2024. 
           <br />
           Completed schooling at 2017, Undergraduate at 2020 and Postgraduate at 2024.
         </span>

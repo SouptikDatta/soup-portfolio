@@ -32,18 +32,16 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <div >
-            <TypingEffect
-              text={['Souptik Datta']}
-              speed={50}
-              eraseDelay={1000}
-              typingDelay={200}
-              cursorRenderer={cursor => <h2>{cursor}</h2>}
-              displayTextRenderer={text => (
-                <span style={{ fontSize:'2.7rem', fontWeight:800 }}>{text}</span>
-              )}
+          <TypingEffect
+            text={['Souptik Datta']}
+            speed={50}
+            eraseDelay={1000}
+            typingDelay={200}
+            cursorRenderer={cursor => <h2>{cursor}</h2>}
+            displayTextRenderer={text => (
+              <span style={{ fontSize:'2.6rem', fontWeight:800 }}>{text}</span>
+            )}
             />
-          </div>
           <p className="md:w-[75%]">
             FullStack Developer with hands-on experience in designing, developing, 
             implementing applications and solutions using wide range of technologies and programming languages.
