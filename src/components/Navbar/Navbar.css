@@ -54,6 +54,9 @@
   .n-list {
     display: none;
   }
+  .n-left {
+    gap: 0.5rem;
+  }
   .n-name {
     font-size: 0.8rem;
   }

@@ -55,10 +55,10 @@
   font-weight: bold;
   font-size: 3rem;
 }
-.i-name > :nth-child(2) {
+.typing-effect-text {
   color: var(--orange);
-  font-weight:700;
-  font-size: 3rem;
+  font-weight: 800;
+  font-size: 3.2rem;
 }
 .i-name > :nth-child(3) {
   font-weight: 100;
@@ -138,8 +138,11 @@
     width: 75%;
   }
 
-  .i-name > :nth-child(2) {
-    font-size: 3rem;
+  .i-name > :nth-child(1) {
+    font-size: 2.2rem;
+  }
+  .typing-effect-text {
+    font-size: 2.4rem;
   }
 
   .i-left{

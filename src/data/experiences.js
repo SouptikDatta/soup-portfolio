@@ -23,6 +23,13 @@ const resumeData = {
             expTitle: "Freight Orbit",
             expDesc: "Advanced Dashboard for Import Export Companies to maintain sales reports, consols, clients and vendors via interactive charts, tables etc."
         },
+        {
+            expImg: images.Pborbit,
+            expCount: "4",
+            expDate: "October 2024 - Current",
+            expTitle: "Invoice Management",
+            expDesc: "Advanced Invoice Management for client, vendors and customers with templates , multiple forms etc."
+        },
     ]
 };
 

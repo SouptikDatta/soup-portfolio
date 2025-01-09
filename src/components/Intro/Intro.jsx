@@ -39,7 +39,7 @@ const Intro = () => {
             typingDelay={200}
             cursorRenderer={cursor => <h2>{cursor}</h2>}
             displayTextRenderer={text => (
-              <span style={{ fontSize:'2.6rem', fontWeight:800 }}>{text}</span>
+              <span className="typing-effect-text">{text}</span>
             )}
             />
           <p className="md:w-[75%]">
