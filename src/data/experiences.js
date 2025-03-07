@@ -24,11 +24,11 @@ const resumeData = {
             expDesc: "Advanced Dashboard for Import Export Companies to maintain sales reports, consols, clients and vendors via interactive charts, tables etc."
         },
         {
-            expImg: images.Pborbit,
+            expImg: images.Milisync,
             expCount: "4",
             expDate: "October 2024 - Current",
-            expTitle: "Invoice Management",
-            expDesc: "Advanced Invoice Management for client, vendors and customers with templates , multiple forms etc."
+            expTitle: "ZVroX",
+            expDesc: "Advanced Leads, Payrolls, Employees, Clients, Vendors, Invoice Management system with templates, forms etc. for Individual or Business usage."
         },
     ]
 };

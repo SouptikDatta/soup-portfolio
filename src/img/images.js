@@ -1,6 +1,7 @@
 // images.js
 import Freight from './Freight.png';
-import Pborbit from './Pborbit/Pborbit.png'
+import Pborbit from './Pborbit/pickleball.avif'
+import Milisync from './Milisync/leads.jpg'
 import RedBeat from './RedBeat.png';
 import Krivitech from './Krivitech.png';
 import Socialoo from './Socialoo.png';
@@ -49,6 +50,7 @@ import RBVideo from './RedBeat/video-recommendations.png'
 const images = {
     Freight,
     Pborbit,
+    Milisync,
     RedBeat,
     Krivitech,
     Socialoo,
